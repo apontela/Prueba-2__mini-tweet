@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mini Twitter</title>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu Condensed' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css__sass/mystyle.css">
+</head>
+<body>
+    <div class="navbar">
+        <span id="navbar__title">Mini Twitter  <i class="fab fa-earlybirds"></i></span>
+    </div>
+    <div class="main">
+        <div class="main__tweet-generator">
+            <h3>Primero, Crea Tu Perfil</h3>
+            <form action="#" class="tweet-generator__perfil">
+                <div class="perfil__nombre-de-usuario">
+                    <p> Nombre de Usuario </p> 
+                    <input type="text" name="nombre-de-usuario" id="nombre-de-usuario" required>
+                    <small>¡Puede ser el que tu quieras!</small>
+                </div>
+                <div class="perfil__imagen-de-usuario">
+                    <p>Selecciona Una Imagen</p>
+                    <input type="file" name="imagen-de-usuario" id="imagen-seleccionada" accept="image/x-png,image/gif,image/jpeg" required>
+                </div>
+                <div class="perfil__button">
+                <button type="submit">Go!</button>
+                </div>
+            </form>
+            <div class="plantilla-tweets">
+                <div class="plantilla-tweets__perfil">
+                    <img class = "imagen-de-usuario"src="../avengers_tower_4k-wide.jpg" alt="Imagen de Perfil">
+                    <span class="nombre-de-usuario">Nombre de Usuario</span>
+                </div>
+                <form action="" class="publicar-tweet">
+                    <textarea name="texto-tweet" id="texto-tweet" rows="3" cols="60" placeholder="¡¡¡Hola mundo!!!" required></textarea>
+                    <button type="submit">Publicar</button>
+                    <div></div>
+                </form>
+            </div>
+        </div>
+        <div class="main__tweets">
+            
+        </div>
+    </div>
+    <div class="footer">
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="assets/javascript/myjs.js"></script>
+</body>
+</html>

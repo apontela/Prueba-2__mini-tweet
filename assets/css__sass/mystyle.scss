@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: 'Ubuntu Condensed';
+    background-color: #F4C095;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #071E22;
+    color: #679289;
+    text-align: center;
+    padding: 10px;
+    font-size: 42px;
+    position: fixed;
+    width: 100%;
+}
+
+.main {
+    display: grid;
+    padding-top: 68px;
+    grid-template-columns: 2fr 4fr;
+}
+
+.main__tweet-generator, .main__tweets {
+    max-width: 400px;
+    padding: 20px
+}
+
+.main__tweets {
+    box-shadow: 0 3px 0 #F4C095, 0 14px 10px rgba(0,0,0,0.25);
+    max-width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
+.tweet-generator__perfil {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 0 #679289, 0 10px 6px rgba(0,0,0,0.25);
+    padding: 10px;
+    background-color: #679289;
+    margin-bottom: 50px;
+}
+
+.perfil__nombre-de-usuario, .perfil__imagen-de-usuario {
+    padding-bottom: 10px;
+}
+
+button {
+    text-align: center
+}
+
+.perfil__button {
+    text-align: center;
+    button {
+        background-color: #071E22;
+        color: white;
+        padding: 10px 20px 10px 20px;
+        border-radius: 10px;
+        border: none;
+    }
+
+}
+
+.plantilla-tweets{
+    img {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        float: left;
+        margin-right: 10px;
+    }
+
+    background-color: #679289;
+    box-shadow: 0 3px 0 #679289, 0 10px 6px rgba(0,0,0,0.25);
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+    display: none;
+    
+}
+
+.plantilla-tweets__perfil {
+    margin-bottom: 10px;
+}
+
+#texto-tweet {
+    max-width: 80%;
+    margin-bottom: 10px;
+}
+
+.publicar-tweet {
+    button {
+        background-color: #071E22;
+        color: white;
+        padding: 10px 20px 10px 20px;
+        border-radius: 10px;
+        border: none;
+        margin-left: 70%;
+    }
+}
