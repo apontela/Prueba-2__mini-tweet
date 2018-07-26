@@ -22,4 +22,28 @@ $(function () {
         $(".imagen-de-usuario").attr("src",user_image);
         $(".plantilla-tweets").css("display", "block");
     })
+    $(".imagen-de-usuario").on("load", function() {
+        let source = ($(".imagen-de-usuario").attr("src"));
+        $(".imagen-de-usuario__tweet").attr("src",source);
+    })
+    let counter = 0;
+    $(".publicar-tweet").submit(function (e) {
+        e.preventDefault();
+        $(".plantilla-publicacion").css("display", "block");
+        let texto_tweet = $("#texto-tweet").val();
+        $(".publicacion__text p").text(texto_tweet);
+    })
+    $(".fa-heart").on("click", function () {
+        $(".fa-heart").css("color", "#EE2E31");
+        counter = counter + 1;
+        $(".publicacion__social small").text(counter);
+    })
+    $(".fa-trash").on("click", function () {
+        let confirma = confirm("¿Estás Seguro de Eliminar Éste Mensaje?");
+        if (confirma == false) {
+            return
+        }
+        $(".fa-trash").parent().parent().remove();
+    })
+    
 })
