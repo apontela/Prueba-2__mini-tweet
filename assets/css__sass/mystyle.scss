@@ -30,7 +30,7 @@ body {
 .main__tweets {
     box-shadow: 0 3px 0 #F4C095, 0 14px 10px rgba(0,0,0,0.25);
     max-width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .tweet-generator__perfil {
@@ -116,7 +116,7 @@ button {
     h3 {
         display: block;
         border-bottom: solid 1px #071E22;
-        margin-left: 100px;
+        margin-left: 110px;
         margin-right: 20px;
         padding: 10px;
     }
