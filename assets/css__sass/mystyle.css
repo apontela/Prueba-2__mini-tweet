@@ -172,6 +172,10 @@ button {
   .navbar {
     font-size: 38px;
   }
+
+  .main__tweet-generator, .main-tweets {
+    padding: 5px;
+  }
 }
 
 /*# sourceMappingURL=mystyle.css.map */
