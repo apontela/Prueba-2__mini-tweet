@@ -44,7 +44,7 @@ $(function () {
         $(this).parent().find("small").text(counter);
     })
     $(".main__tweets").on("click", ".fa-trash", this, function () {
-        let confirma = confirm("¿Estás Seguro de Eliminar Éste Mensaje?");
+        let confirma = confirm("¿Estás seguro de eliminar éste mensaje?");
         if (confirma == false) {
             return
         }
