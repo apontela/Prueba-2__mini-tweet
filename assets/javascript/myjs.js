@@ -24,13 +24,18 @@ $(function () {
     })
     $(".imagen-de-usuario").on("load", function() {
         let source = ($(".imagen-de-usuario").attr("src"));
-        $(".imagen-de-usuario__tweet").attr("src",source);
+        $(".plantilla-publicacion:last-child .imagen-de-usuario__tweet").attr("src",source);
     })
     $(".publicar-tweet").submit(function (e) {
         e.preventDefault();
         $(".plantilla-publicacion:last-child").clone().css("display", "block").prependTo(".main__tweets").hide().fadeIn(300);
         let texto_tweet = $("#texto-tweet").val();
         $(".plantilla-publicacion:first-child .publicacion__text p").text(texto_tweet);
+        let imagen_primer_tweet = $(".plantilla-publicacion:last-child .imagen-de-usuario__tweet").attr("src");
+        $(".plantilla-publicacion:first-child .imagen-de-usuario__tweet").attr("src", imagen_primer_tweet);
+        let user_name_tweet = $(".nombre-de-usuario").text();
+        $(".plantilla-publicacion:first-child .nombre-de-usuario__tweet").text(user_name_tweet);
+        $("#texto-tweet").val(null);
     })
     $(".main__tweets").on("click", ".fa-heart", this, function () {
         let counter = parseInt($(this).parent().find("small").text());
